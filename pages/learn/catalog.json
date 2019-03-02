@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "dark",
+  "backgroundColorTop": "#fff",
+  "backgroundColorBottom": "#F1F6F7",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "学习目录",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {}
+}

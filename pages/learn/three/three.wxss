@@ -1,0 +1,12 @@
+/* pages/learn/three/three.wxss */
+.imgBox{
+  margin: 0 auto;
+  text-align: center;
+}
+.img{
+  width: 320rpx;
+  margin: 0 auto;
+}
+button{
+  width: 400rpx;
+}

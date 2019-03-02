@@ -1,0 +1,23 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.con{
+  font-size: 28rpx;
+  line-height: 56rpx;
+}
+/*列表默认样式*/
+.list{
+  margin-top:20rpx;
+  padding: 0 10rpx;
+}
+.list_con{
+  border-bottom: 1px dashed #ccc;
+  padding: 5rpx 0;
+}

@@ -1,0 +1,12 @@
+/* pages/share/share.wxss */
+.imgBox{
+  margin: 0 auto;
+  text-align: center;
+}
+.img{
+  width: 320rpx;
+  margin: 0 auto;
+}
+.text{
+  text-align: center
+}

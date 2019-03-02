@@ -1,0 +1,7 @@
+<!--pages/learn/three/three.wxml-->
+<view class='con'>
+  <view class='imgBox'>
+    <image class='img' mode='aspectFill' src='../../../image/gx.gif'></image>
+  </view>
+  <button open-type="share" type='primary' size='{{primarySize}}'>点击分享给朋友</button>
+</view>

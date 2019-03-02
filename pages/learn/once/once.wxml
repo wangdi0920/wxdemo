@@ -1,0 +1,9 @@
+<!--pages/share/share.wxml-->
+<view class='con'>
+  <view class='imgBox'>
+    <image class='img' mode='aspectFill' src='../../../image/gx.gif'></image>
+  </view>
+  <view class='text'>
+    内容待更新，敬请期待
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/learn/two/two.wxml-->
+<view class='con'>
+  <view class='list'>
+    <view class='list_con'>
+      <view bindtap='goOne'>1.打开新页面（wx.navigateTo） </view>
+    </view>
+    <view class='list_con'>
+      <view bindtap='goTwo'>2.页面重定向（wx.redirectTo） </view>
+    </view>
+    <view class='list_con'>
+      <view bindtap='goThree'>3.页面返回（wx.navigateBack) </view>
+    </view>
+    <view class='list_con'>
+      <view bindtap='goFour'>3.打开tabBar页面（wx.navigateBack) </view>
+    </view>
+  </view>
+  <view class='tips'>
+    <view style='color:red'>注意:</view>
+    <view>navigateTo, redirectTo 只能打开非 tabBar 页面。</view>
+    <view>switchTab 只能打开 tabBar 页面。 reLaunch 可以打开任意页面。</view>
+    <view>页面底部的 tabBar 由页面决定，即只要是定义为 tabBar 的页面，底部都有 tabBar。</view>
+    <view>调用页面路由带的参数可以在目标页面的onLoad中获取。</view>
+  </view>
+</view>

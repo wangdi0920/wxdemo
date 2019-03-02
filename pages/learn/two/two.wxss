@@ -1,0 +1,6 @@
+/* pages/learn/two/two.wxss */
+.tips{
+  padding: 0 10rpx;
+  color:#999;
+  margin: 50rpx 10rpx;
+}

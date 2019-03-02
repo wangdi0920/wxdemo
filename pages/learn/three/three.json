@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "dark",
+  "backgroundColorTop": "#fff",
+  "backgroundColorBottom": "#F1F6F7",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "分享功能",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {}
+}
