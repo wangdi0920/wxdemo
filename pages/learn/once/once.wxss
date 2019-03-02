@@ -1,5 +1,7 @@
 /* pages/learn/once/once.wxss */
-/* pages/share/share.wxss */
+.main{
+  padding: 0 10rpx;
+}
 .imgBox{
   margin: 0 auto;
   text-align: center;
