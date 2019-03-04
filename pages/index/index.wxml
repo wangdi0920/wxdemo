@@ -1,13 +1,17 @@
 <!--index.wxml-->
-<view class="container main">
+<view class="container main" wx:if="{{!isShowIndex}}" >
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" type="primary" bindgetuserinfo="getUserInfo"> 点击登陆 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view class='goIndex' bindtap='goIndex'>点击进入首页</view>
     </block>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
+</view>
+<view >
+ 111111
 </view>
