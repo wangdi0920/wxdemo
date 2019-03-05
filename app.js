@@ -10,6 +10,23 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        wx.request({
+          url: 'https://www.easy-mock.com/mock/5c7cf7b1b7a08d1246bef89a/wxDemo/login',
+           method:'post',
+          success: res => {
+            console.log('fetch sessionId: ', res);
+          
+          },
+          fail: res => {
+            console.error('Request Fail to fetch SessionId', res);
+            reject(res);
+            wxapp.showModal({
+              title: '提示',
+              content: '系统维护中，请稍后再试',
+              showCancel: false
+            });
+          }
+        })
       }
     })
     // 获取用户信息
@@ -21,7 +38,7 @@ App({
             success: res => {
               // 可以将 res 发送给后台解码出 unionId
               this.globalData.userInfo = res.userInfo
-
+              wx.setStorageSync('userInfo', res.userInfo)
               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
               // 所以此处加入 callback 以防止这种情况
               if (this.userInfoReadyCallback) {

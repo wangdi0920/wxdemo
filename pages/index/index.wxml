@@ -14,4 +14,33 @@
 </view>
 <view >
  111111
+  <view bindtap='getLocation'>获取地理位置</view>
 </view>
+
+<!-- <view>
+   "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#19b104",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath":"image/icon1/shouye.png",
+        "selectedIconPath":"image/icon2/shouye.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/learn/catalog",
+        "iconPath": "image/icon1/mulu.png",
+        "selectedIconPath": "image/icon2/mulu.png",
+        "text": "目录"
+      },
+      {
+        "pagePath": "pages/share/share",
+        "iconPath": "image/icon1/fenxiang.png",
+        "selectedIconPath": "image/icon2/fenxiang.png",
+        "text": "分享"
+      }
+    ]
+  },
+</view> -->
