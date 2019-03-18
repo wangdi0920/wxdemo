@@ -7,6 +7,7 @@ Page({
     motto: '欢迎👏来到微信小程序',
     userInfo: {},
     hasUserInfo: false,
+    isShowIndex: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
@@ -15,13 +16,13 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  onLoad: function() {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {
@@ -50,5 +51,44 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     })
-  }
+  },
+  goIndex() {
+    if (this.data.userInfo) {
+      this.setData({
+        isShowIndex: true
+      })
+    } else {
+      wx.showModal({
+        title: '暂未授权',
+        content: '需要您的授权才能使用哦',
+        success:(res)=> {
+          if (res.confirm) {
+            console.log('用户点击确定')
+            wx.openSetting({
+              success:(res)=> {
+                this.setData({
+                  hasUserInfo: true,
+                  isShowIndex:true,
+                })
+              }
+            })
+          } else if (res.cancel) {
+            console.log('用户点击取消')
+          }
+        }
+      })
+
+    }
+  },
+  getLocation(){
+    wx.getLocation({
+      type: 'wgs84',
+      success(res) {
+        const latitude = res.latitude
+        const longitude = res.longitude
+        const speed = res.speed
+        const accuracy = res.accuracy
+      }
+    })
+  },
 })

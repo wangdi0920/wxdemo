@@ -18,6 +18,12 @@
       <view class='list_con'>
         <view>第三节：简述小程序的分享功能</view>
       </view>
+      <view class='list_con'>
+        <view>第四节：小程序的授权</view>
+      </view>
+       <view class='list_con'>
+        <view>第四节：小程序路由拦截器</view>
+      </view>
     </navigator>
   </view>
 </view>
