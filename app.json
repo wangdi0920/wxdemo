@@ -1,6 +1,5 @@
 {
-  "pages":[
-  
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/learn/catalog",
@@ -9,11 +8,11 @@
     "pages/learn/three/three",
     "pages/share/share"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Demo",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#a9b7b7",
@@ -22,8 +21,8 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath":"image/icon1/shouye.png",
-        "selectedIconPath":"image/icon2/shouye.png",
+        "iconPath": "image/icon1/shouye.png",
+        "selectedIconPath": "image/icon2/shouye.png",
         "text": "首页"
       },
       {

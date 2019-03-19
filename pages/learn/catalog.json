@@ -5,5 +5,7 @@
   "navigationBarBackgroundColor": "#fff",
   "navigationBarTitleText": "学习目录",
   "navigationBarTextStyle": "black",
-  "usingComponents": {}
+  "usingComponents": {
+    "g-more": "/components/more/index"
+  }
 }

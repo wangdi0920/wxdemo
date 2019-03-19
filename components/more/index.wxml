@@ -1,0 +1,5 @@
+<!--components/more/index.wxml-->
+<view>
+  {{_text}}<text wx:if="{{!isHide}}">...</text>
+  <text class="b_color" wx:if="{{!isHide}}" bindtap='quanW'>{{btn_text}}</text>
+</view>
