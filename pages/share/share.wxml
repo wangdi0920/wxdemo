@@ -6,8 +6,10 @@
   <view class='text'>
     内容待更新，敬请期待......
   </view> -->
-  <view>
-    <view>参考文档</view>
-    <view bindtap='openUrl'>https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?search-key=web-view</view>
-  </view>
+
+    <view wx:for="{{urlCon}}" bindtap='getId' data-id='{{index}}'>
+        <view>{{item.title}}</view>
+        <view bindtap='openUrl' data-index='{{index}}'  wx:for='{{item.urlList}}' >{{item.url}}     </view>  
+    </view>
+
 </view>

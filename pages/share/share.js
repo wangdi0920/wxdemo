@@ -5,7 +5,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    url:'https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?search-key=web-view'
+    id:'',
+    index:'',
+    urlCon:[
+      { title: '跳转链接参考文档', 
+      urlList: [
+        { url: 'https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?search-key=web-view'}
+      ]},
+      {
+        title: '组件参考文档', 
+        urlList: [
+          { url: 'https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/events.html' }
+        ] },
+    ]
   },
 
   /**
@@ -14,9 +26,18 @@ Page({
   onLoad: function (options) {
 
   },
-  openUrl(){
+  getId(e){
+    console.log('111111',e)
+    this.setData({
+      id: e.currentTarget.dataset.id,
+      index: e.target.dataset.index
+    })
+  },
+  openUrl(e){
+    console.log(e, this.data.id, this.data.index)
+    let index = e.target.dataset.index;
     wx.navigateTo({
-      url: '/pages/outUrl/outUrl',
+      url: '/pages/outUrl/outUrl?id=' + this.data.id + '&index=' + this.data.index,
     })
   },
   /**

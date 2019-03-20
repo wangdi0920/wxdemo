@@ -1,2 +1,2 @@
 <!--pages/outUrl/outUrl.wxml-->
-<g-url url="{{url}}"></g-url>
+<g-url url="{{urlitem}}"></g-url>

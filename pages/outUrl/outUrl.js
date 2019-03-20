@@ -5,14 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-    url: 'https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?search-key=web-view'
+    id:'',
+    index:'',
+    urlitem:'',
+    urlCon: [
+      {
+        title: '跳转链接参考文档',
+        urlList: [
+          { url: 'https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?search-key=web-view' }
+        ]
+      },
+      {
+        title: '组件参考文档',
+        urlList: [
+          { url: 'https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/events.html' }
+        ]
+      },
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options.id, options.index)
+      this.setData({
+        id:options.id,
+        index:options.index,
+        urlitem: this.data.urlCon[options.id].urlList[options.index].url
+      })
   },
 
   /**
