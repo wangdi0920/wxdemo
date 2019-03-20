@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '欢迎👏来到微信小程序',
+    motto: '欢迎👏来到微信小程序练习',
     userInfo: {},
     hasUserInfo: false,
     isShowIndex: false,

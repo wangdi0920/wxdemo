@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="container main" wx:if="{{!isShowIndex}}" >
+<view class="container" wx:if="{{!isShowIndex}}" >
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" type="primary" bindgetuserinfo="getUserInfo"> 点击登陆 </button>
     <block wx:else>
