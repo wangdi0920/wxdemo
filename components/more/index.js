@@ -37,11 +37,9 @@ Component({
     // this.properties.text.slice(this.properties.max)
     quanW() {
       if (this.data.isHide) {
-        console.log(1);
         this.setData({ _text: this.properties.text.slice(0, this.properties.max), isHide: false, btn_text: '全文' });
       } else {
         this.setData({ _text: this.properties.text, isHide: true, btn_text: '收起' });
-        console.log(2);
       }
     }
   }

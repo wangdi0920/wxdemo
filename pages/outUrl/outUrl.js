@@ -1,11 +1,11 @@
-// pages/learn/catalog.js
+// pages/outUrl/outUrl.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    name:'生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期。'
+    url: 'https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?search-key=web-view'
   },
 
   /**

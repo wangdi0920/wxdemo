@@ -1,0 +1,2 @@
+<!--pages/outUrl/outUrl.wxml-->
+<g-url url="{{url}}"></g-url>

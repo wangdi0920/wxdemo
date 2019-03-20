@@ -6,7 +6,9 @@
     "pages/learn/once/once",
     "pages/learn/two/two",
     "pages/learn/three/three",
-    "pages/share/share"
+    "pages/share/share",
+    "pages/outUrl/outUrl",
+    "components/outurl/outurl"
   ],
   "window": {
     "backgroundTextStyle": "light",

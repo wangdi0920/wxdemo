@@ -1,9 +1,13 @@
 <!--pages/share/share.wxml-->
 <view class='con'>
-  <view class='imgBox'>
+  <!-- <view class='imgBox'>
     <image class='img' mode='aspectFill' src='../../image/gx.gif'></image>
   </view>
   <view class='text'>
     内容待更新，敬请期待......
+  </view> -->
+  <view>
+    <view>参考文档</view>
+    <view bindtap='openUrl'>https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?search-key=web-view</view>
   </view>
 </view>

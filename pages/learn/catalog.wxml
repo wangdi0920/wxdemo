@@ -26,5 +26,5 @@
       </view>
     </navigator>
   </view>
-   <g-more max="50" text="{{name !== '' && name !== 'null' ?name:'--'}}" />
+   <g-more max="10" text="{{name !== '' && name !== 'null' ?name:'--'}}" />
 </view>

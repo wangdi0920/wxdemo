@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    url:'https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?search-key=web-view'
   },
 
   /**
@@ -14,7 +14,11 @@ Page({
   onLoad: function (options) {
 
   },
-
+  openUrl(){
+    wx.navigateTo({
+      url: '/pages/outUrl/outUrl',
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

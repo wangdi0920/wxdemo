@@ -3,7 +3,9 @@
   "backgroundColorTop": "#fff",
   "backgroundColorBottom": "#F1F6F7",
   "navigationBarBackgroundColor": "#fff",
-  "navigationBarTitleText": "暂无内容",
+  "navigationBarTitleText": "页面分享",
   "navigationBarTextStyle": "black",
-  "usingComponents": {}
+  "usingComponents": {
+    "g-url": "/components/outurl/outurl"
+  }
 }

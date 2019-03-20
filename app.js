@@ -7,28 +7,28 @@ App({
     wx.setStorageSync('logs', logs)
 
     // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        wx.request({
-          url: 'https://www.easy-mock.com/mock/5c7cf7b1b7a08d1246bef89a/wxDemo/login',
-           method:'post',
-          success: res => {
-            console.log('fetch sessionId: ', res);
+    // wx.login({
+    //   success: res => {
+    //     // 发送 res.code 到后台换取 openId, sessionKey, unionId
+    //     wx.request({
+    //       url: 'https://www.easy-mock.com/mock/5c7cf7b1b7a08d1246bef89a/wxDemo/login',
+    //        method:'post',
+    //       success: res => {
+    //         console.log('fetch sessionId: ', res);
           
-          },
-          fail: res => {
-            console.error('Request Fail to fetch SessionId', res);
-            reject(res);
-            wxapp.showModal({
-              title: '提示',
-              content: '系统维护中，请稍后再试',
-              showCancel: false
-            });
-          }
-        })
-      }
-    })
+    //       },
+    //       fail: res => {
+    //         console.error('Request Fail to fetch SessionId', res);
+    //         reject(res);
+    //         wxapp.showModal({
+    //           title: '提示',
+    //           content: '系统维护中，请稍后再试',
+    //           showCancel: false
+    //         });
+    //       }
+    //     })
+    //   }
+    // })
     // 获取用户信息
     wx.getSetting({
       success: res => {
