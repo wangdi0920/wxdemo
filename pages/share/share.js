@@ -26,18 +26,13 @@ Page({
   onLoad: function (options) {
 
   },
-  getId(e){
-    console.log('111111',e)
-    this.setData({
-      id: e.currentTarget.dataset.id,
-      index: e.target.dataset.index
-    })
-  },
+  
   openUrl(e){
-    console.log(e, this.data.id, this.data.index)
-    let index = e.target.dataset.index;
+    console.log(e)
+    let url = e.target.dataset.url;
+    wx.setStorageSync('webView',url )
     wx.navigateTo({
-      url: '/pages/outUrl/outUrl?id=' + this.data.id + '&index=' + this.data.index,
+      url: '/pages/outUrl/outUrl'
     })
   },
   /**

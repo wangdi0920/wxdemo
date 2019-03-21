@@ -7,9 +7,9 @@
     内容待更新，敬请期待......
   </view> -->
 
-    <view wx:for="{{urlCon}}" bindtap='getId' data-id='{{index}}'>
+    <view wx:for="{{urlCon}}">
         <view>{{item.title}}</view>
-        <view bindtap='openUrl' data-index='{{index}}'  wx:for='{{item.urlList}}' >{{item.url}}     </view>  
+        <view bindtap='openUrl' data-index='{{index}}'  wx:for='{{item.urlList}}' data-url='{{item.url}}' >{{item.url}}     </view>  
     </view>
 
 </view>
