@@ -1,4 +1,16 @@
 /**index.wxss**/
+.navigation {
+  width: 100%;
+  background: #c02c38;
+  color: #FFF;
+  padding-left: 40rpx;
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0rpx;
+  z-index: 100;
+}
 .userinfo {
   display: flex;
   flex-direction: column;

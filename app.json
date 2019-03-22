@@ -8,7 +8,10 @@
     "pages/learn/three/three",
     "pages/share/share",
     "pages/outUrl/outUrl",
-    "components/outurl/outurl"
+    "components/outurl/outurl",
+    "pages/learn/four/four",
+    "pages/learn/five/five",
+    "pages/learn/six/six"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -37,7 +40,7 @@
         "pagePath": "pages/share/share",
         "iconPath": "image/icon1/fenxiang.png",
         "selectedIconPath": "image/icon2/fenxiang.png",
-        "text": "分享"
+        "text": "参考资料"
       }
     ]
   },
@@ -50,5 +53,10 @@
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
-  }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx4ef821502842272e",
+    "wxa24845c83b62bb22",
+    "wx2eec5fb00157a603"
+  ]
 }

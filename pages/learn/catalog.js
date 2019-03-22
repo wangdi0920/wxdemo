@@ -5,6 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
+    menu:[
+      { path: '/pages/learn/once/once', name:'第一节：简述小程序的目录结构'},
+      { path: '/pages/learn/two/two', name:'第二节：简述小程序的路由' },
+      { path: '/pages/learn/three/three', name:'第三节：简述小程序的分享功能' },
+      { path: '/pages/learn/four/four', name: '第四节：小程序的授权' },
+      { path: '/pages/learn/five/five', name: '第五节：小程序路由拦截器' },
+      { path: '/pages/learn/six/six', name: '第六节：跳转其他小程序' },
+      ],
     name:'生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期函数--监听页面加载生命周期。'
   },
 
