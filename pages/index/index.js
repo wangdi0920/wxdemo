@@ -17,6 +17,7 @@ Page({
     })
   },
   onLoad: function() {
+    this.getLocation();
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -88,6 +89,7 @@ Page({
         const longitude = res.longitude
         const speed = res.speed
         const accuracy = res.accuracy
+        console.log(res)
       }
     })
   },

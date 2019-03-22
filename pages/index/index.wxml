@@ -12,10 +12,9 @@
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>
-<view >
- 111111
+<!-- <view >
   <view bindtap='getLocation'>获取地理位置</view>
-</view>
+</view> -->
 
 <!-- <view>
    "tabBar": {
