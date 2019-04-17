@@ -6,6 +6,7 @@
   "navigationBarTitleText": "参考资料",
   "navigationBarTextStyle": "black",
   "usingComponents": {
-    "g-url": "/components/outurl/outurl"
+    "g-url": "/components/outurl/outurl",
+    "g-cell": "/components/g-ui/g-cell/index"
   }
 }

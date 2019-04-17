@@ -5,5 +5,7 @@
   "navigationBarBackgroundColor": "#fff",
   "navigationBarTitleText": "小程序目录结构",
   "navigationBarTextStyle": "black",
-  "usingComponents": {}
+  "usingComponents": {
+    "g-more": "/components/g-ui/g-more/index"
+  }
 }

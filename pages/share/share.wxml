@@ -1,15 +1,11 @@
 <!--pages/share/share.wxml-->
 <view class='con'>
-  <!-- <view class='imgBox'>
-    <image class='img' mode='aspectFill' src='../../image/gx.gif'></image>
-  </view>
-  <view class='text'>
-    内容待更新，敬请期待......
-  </view> -->
-
     <view wx:for="{{urlCon}}">
-        <view>{{item.title}}</view>
-        <view bindtap='openUrl' data-index='{{index}}'  wx:for='{{item.urlList}}' data-url='{{item.url}}' >{{item.url}}     </view>  
+      <view style='padding:36rpx 40rpx 0; font-size:36rpx; line-height:48rpx;'>{{item.title}}</view>
+      <block  wx:for='{{item.urlList}}'>
+         <g-cell  label="" desc="{{item.url|| '--'}}" bind:tap="openUrl" data-url='{{item.url}}' access>
+      </g-cell>
+      </block>
     </view>
 
 </view>

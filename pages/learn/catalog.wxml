@@ -4,13 +4,9 @@
     <image class='img' src='../../image/banner1.jpeg'></image>
   </view>
   <view class='list'>
-   <block wx:for='{{menu}}' wx:key='{{index}}'>
-      <navigator url='{{item.path}}'>
-        <view class='list_con'>
-          <view>{{item.name}}</view>
-        </view>
-      </navigator>
-  </block>
+    <block wx:for='{{menu}}' wx:key='{{index}}'>
+      <g-cell  label="{{item.name || '--'}}" desc="" data-pkid="{{item.name}}" bind:tap="handleTap" data-url='{{item.path}}' access>
+      </g-cell>
+  </block> 
   </view>
-   <g-more max="10" text="{{name !== '' && name !== 'null' ?name:'--'}}" />
 </view>
