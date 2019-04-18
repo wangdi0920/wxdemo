@@ -1,6 +1,5 @@
 {
   "pages": [
-   
     "pages/index/index",
     "pages/logs/logs",
     "pages/learn/catalog",
@@ -13,7 +12,8 @@
     "pages/learn/four/four",
     "pages/learn/five/five",
     "pages/learn/six/six",
-    "components/g-ui/g-cell/index"
+    "components/g-ui/g-cell/index",
+    "components/g-ui/g-form/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,5 +1,4 @@
-// pages/learn/three/three.js
-const report = require('../../../utils/report.js') ;
+// components/g-ui/g-form/index.js
 Page({
 
   /**
@@ -13,19 +12,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    report.countShare('转发成功');
+
   },
-  //转发
-  onShareAppMessage(res) {
-   
-    if (res.from === 'button') {
-      // 来自页面内转发按钮
-      console.log(res.target)
-    }
-    return {
-      path: '/page/learn/three/three'
-    }
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
