@@ -12,6 +12,9 @@
   font-size: 28rpx;
   line-height: 56rpx;
 }
+.main{
+    padding: 0 10rpx;
+}
 /*列表默认样式*/
 .list{
   margin-top:20rpx;

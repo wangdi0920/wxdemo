@@ -1,0 +1,8 @@
+<!--components/g-ui/g-num/index.wxml-->
+<view class="num-controller">
+  <view class="btn sub-btn" hidden="{{num<0}}" bindtap="sub">-</view>
+  <view class="goods-num" hidden="{{num<0}}">{{num}}</view>
+   <view class='notice' wx:if="{{num<0}}">不能再减少啦</view>
+  <view class="btn add-btn" bindtap="add">+</view>
+</view>
+<!-- 如果小于0 就去掉减法 -->

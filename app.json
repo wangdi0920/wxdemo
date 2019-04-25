@@ -13,7 +13,8 @@
     "pages/learn/five/five",
     "pages/learn/six/six",
     "components/g-ui/g-cell/index",
-    "components/g-ui/g-form/index"
+    "components/g-ui/g-form/index",
+    "components/g-ui/g-num/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

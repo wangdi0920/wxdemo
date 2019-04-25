@@ -3,7 +3,7 @@
   <view class='banner'>
     <image class='img' src='../../image/banner1.jpeg'></image>
   </view>
-  <view class='list'>
+  <view >
     <block wx:for='{{menu}}' wx:key='{{index}}'>
       <g-cell  label="{{item.name || '--'}}" desc="" data-pkid="{{item.name}}" bind:tap="handleTap" data-url='{{item.path}}' access>
       </g-cell>

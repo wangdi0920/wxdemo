@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    num:0
   },
 
   /**
@@ -25,6 +25,9 @@ Page({
     return {
       path: '/page/learn/three/three'
     }
+  },
+  numChange(e){
+     console.log('获取从组件内部传过来的值',e.detail)
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
