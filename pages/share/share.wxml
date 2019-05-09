@@ -1,8 +1,8 @@
 <!--pages/share/share.wxml-->
 <view class='con'>
-    <view wx:for="{{urlCon}}">
+    <view wx:for="{{urlCon}}" wx:key="index">
       <view style='padding:36rpx 40rpx 0; font-size:36rpx; line-height:48rpx;'>{{item.title}}</view>
-      <block  wx:for='{{item.urlList}}'>
+      <block  wx:for='{{item.urlList}}' wx:key="index">
          <g-cell  label="" desc="{{item.url|| '--'}}" bind:tap="openUrl" data-url='{{item.url}}' access>
       </g-cell>
       </block>

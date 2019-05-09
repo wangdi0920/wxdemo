@@ -1,7 +1,7 @@
 <!--pages/learn/six/six.wxml-->
 <view class='con'>
 <view style='padding:0 10rpx;'>
-   <block wx:for='{{list}}'>
+   <block wx:for='{{list}}' wx:key="index">
   <view bindtap='goOther' data-id='{{item.addId}}'>
     <text>{{item.title}}</text>
   </view>

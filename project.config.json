@@ -39,12 +39,27 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
 					"name": "弹性布局",
 					"pathName": "pages/learn/six/six",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地图组件",
+					"pathName": "pages/learn/four/four",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "swiper和下拉菜单",
+					"pathName": "pages/learn/five/five",
+					"query": "",
 					"scene": null
 				}
 			]

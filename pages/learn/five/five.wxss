@@ -28,3 +28,21 @@
 .swiper-box .wx-swiper-dot-active::before{
     background:#fff;   
 }
+
+
+
+.tabbar{
+  margin-top: 20rpx;
+  padding: 0 5%;
+}
+.tab-item{
+  line-height: 50rpx;
+  font-size: 28rpx;
+  float: right;
+  width: 33.3%;
+  text-align: center;
+}
+.active{
+  font-weight: bold;
+  color: #F00;
+}
