@@ -2,14 +2,7 @@
 <view>
    <view class="navigation" style="padding-top: {{navigationTop}}px;height: {{navigationHeight}}px;">自定义导航栏</view>
   <view class="container" style="padding-top: {{navigationTop + navigationHeight+100}}px" wx:if="{{!isShowIndex}}" >
-    <view class="userinfo">
-      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" type="primary" bindgetuserinfo="getUserInfo"> 点击登陆 </button>
-      <block wx:else>
-        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-        <view class='goIndex' bindtap='goIndex'>点击进入首页</view>
-      </block>
-    </view>
+    
     <view class="usermotto">
       <text class="user-motto">{{motto}}</text>
     </view>
@@ -21,6 +14,9 @@
     </navigator>
      <navigator url='/pages/share/share'>
       <view>参考资料</view>
+    </navigator>
+    <navigator url='/pages/mine/mine'>
+      <view>我的</view>
     </navigator>
     </view>
 </view>

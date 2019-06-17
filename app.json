@@ -14,7 +14,10 @@
     "pages/learn/six/six",
     "components/g-ui/g-cell/index",
     "components/g-ui/g-form/index",
-    "components/g-ui/g-num/index"
+    "components/g-ui/g-num/index",
+    "pages/learn/seven/seven",
+    "pages/mine/mine",
+    "components/g-ui/g-checkbox/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -29,7 +32,7 @@
   "debug": true,
   "permission": {
     "scope.userLocation": {
-      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+      "desc": "你的位置111111"
     }
   },
   "navigateToMiniProgramAppIdList": [

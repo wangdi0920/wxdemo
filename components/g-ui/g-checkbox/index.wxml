@@ -1,0 +1,6 @@
+<!--components/g-ui/g-checkbox/index.wxml-->
+<checkbox-group bindchange="checkboxChange">
+  <label class="{{item.checked?'checkbox checked':'checkbox'}}" wx:for="{{checkList}}" bindtap='checkbox' data-index="{{index}}" wx:key="item.name">
+  <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+  </label>
+ </checkbox-group>

@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -60,6 +60,26 @@
 					"name": "swiper和下拉菜单",
 					"pathName": "pages/learn/five/five",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "目录结构",
+					"pathName": "pages/learn/once/once",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "支付页面",
+					"pathName": "pages/learn/seven/seven",
 					"scene": null
 				}
 			]

@@ -4,10 +4,10 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '欢迎👏来到微信小程序练习 2019-01-01',
+    motto: '欢迎👏来到微信小程序练习 王迪',
     userInfo: {},
     hasUserInfo: false,
-    isShowIndex: false,
+    isShowIndex: true,
     navigationTop:20,
     navigationHeight:44,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
@@ -48,14 +48,7 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  },
+  
   goIndex() {
     if (this.data.userInfo) {
       this.setData({

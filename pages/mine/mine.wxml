@@ -1,0 +1,8 @@
+<!--pages/mine/mine.wxml-->
+<view class="userinfo">
+      <button wx:if="{{!isLogin}}" open-type="getUserInfo" type="primary" bindgetuserinfo="getUserInfo"> 点击登陆 </button>
+      <view wx:if="{{isLogin}}">
+        <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+</view>

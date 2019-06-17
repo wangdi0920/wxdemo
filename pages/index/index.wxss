@@ -9,7 +9,6 @@
   align-items: center;
   position: fixed;
   top: 0rpx;
-  z-index: 100;
 }
 .userinfo {
   display: flex;
@@ -17,20 +16,7 @@
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
 
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
 .main{
   position: fixed;
   top:0;
