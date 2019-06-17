@@ -4,11 +4,13 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '欢迎',
+    motto: '欢迎👏来到微信小程序练习 王迪',
     userInfo: {},
     hasUserInfo: false,
-    isShowIndex: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    isShowIndex: true,
+    navigationTop:20,
+    navigationHeight:44,
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
   //事件处理函数
   bindViewTap: function() {
@@ -18,6 +20,7 @@ Page({
   },
   onLoad: function() {
     this.getLocation();
+    this.getNavigationTop();
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -45,14 +48,7 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  },
+  
   goIndex() {
     if (this.data.userInfo) {
       this.setData({
@@ -93,4 +89,39 @@ Page({
       }
     })
   },
+  // 分享
+  onShareAppMessage(res) {
+    if (res.from === 'menu') {
+      console.log(res.target)
+    }
+    return {
+      title: '小程序学习',
+      path: '/pages/index/index',
+      imageUrl: 'https://static.gjzwfw.gov.cn/share.jpg'
+    }
+  },
+  // 获取自定义导航条高度//https://developers.weixin.qq.com/miniprogram/dev/api/wx.getSystemInfoSync.html?search-key=getSystemInfoSync
+  getNavigationTop() {
+    let systemInfo = wx.getSystemInfoSync();
+    const { statusBarHeight } = systemInfo;
+
+    let isAndroid = false;
+    if (systemInfo.platform.toLowerCase() === 'android') {
+      isAndroid = true;
+    }
+    let pt = 20;// 导航状态栏上内边距
+    let h = 44;// 导航状态栏高度
+    if (!isAndroid) {
+      pt = statusBarHeight;
+      h = 44;
+    } else {
+      pt = statusBarHeight;
+      h = 48;
+    }
+    this.setData({
+      navigationTop: pt,
+      navigationHeight: h
+    })
+
+  }
 })
