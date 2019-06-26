@@ -6,3 +6,22 @@
         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
       </view>
 </view>
+
+<view class='list-item'>
+  <view class='item'>语文</view>
+  <view class='item'>数学</view>
+  <view class='item'>英语</view> 
+  <view class='item'>历史</view>
+</view>
+
+<view>
+  实现点击弹框以外的地方关闭弹框
+</view>
+<view bindtap="open">
+   点击打开弹窗
+</view>
+<view class="tankuang" wx:if="{{isShow}}" bindtap='close'>
+    <view class="tankuangcon" catchtap='inbtn'>
+        我是弹框
+    </view>
+</view>

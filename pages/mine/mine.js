@@ -1,5 +1,5 @@
 // pages/mine/mine.js
-var app = getApp();
+const app = getApp();
 Page({
 
   /**
@@ -7,16 +7,14 @@ Page({
    */
   data: {
      isLogin:false,
-     userInfo:''
+     userInfo:'',
+     isShow: false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-     
-  },
-  getUserInfo: function (e) {
+  getUserInfo (e) {
     console.log(e, getApp().globalData)
     wx.setStorageSync('userInfo', e.detail.userInfo);
     app.globalData.userInfo = e.detail.userInfo;
@@ -30,14 +28,14 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  // onReady: function () {
 
-  },
+  // },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow () {
     console.log(getApp().globalData)
     if (
       wx.getStorageSync &&
@@ -52,39 +50,52 @@ Page({
       });
     }
   },
-
+  open(){
+    this.setData({
+      isShow: true
+    })
+  },
+  close(){
+    this.setData({
+      isShow: false
+    })
+  },
+  // 这个方法必须有，就算不做什么事情也要写上去，因为这个事件是为了防止事件冒泡
+  inbtn(e){
+    console.log(e)
+  },  
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  // onHide: function () {
 
-  },
+  // },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  // onUnload: function () {
 
-  },
+  // },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  // onPullDownRefresh: function () {
 
-  },
+  // },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  // onReachBottom: function () {
 
-  },
+  // },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  // onShareAppMessage: function () {
 
-  }
+  // }
 })
