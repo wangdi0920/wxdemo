@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '欢迎👏来到微信小程序练习 王迪',
+    motto: '欢迎',
     userInfo: {},
     hasUserInfo: false,
     isShowIndex: true,
@@ -13,12 +13,12 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
   //事件处理函数
-  bindViewTap: function() {
+  bindViewTap() {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
-  onLoad: function() {
+  onLoad() {
     this.getLocation();
     this.getNavigationTop();
     if (app.globalData.userInfo) {
@@ -62,7 +62,7 @@ Page({
           if (res.confirm) {
             console.log('用户点击确定')
             wx.openSetting({
-              success:(res)=> {
+              success:()=> {
                 this.setData({
                   hasUserInfo: true,
                   isShowIndex:true,
@@ -81,10 +81,6 @@ Page({
     wx.getLocation({
       type: 'wgs84',
       success(res) {
-        const latitude = res.latitude
-        const longitude = res.longitude
-        const speed = res.speed
-        const accuracy = res.accuracy
         console.log(res)
       }
     })
@@ -102,7 +98,7 @@ Page({
   },
   // 获取自定义导航条高度//https://developers.weixin.qq.com/miniprogram/dev/api/wx.getSystemInfoSync.html?search-key=getSystemInfoSync
   getNavigationTop() {
-    let systemInfo = wx.getSystemInfoSync();
+    const systemInfo = wx.getSystemInfoSync();
     const { statusBarHeight } = systemInfo;
 
     let isAndroid = false;

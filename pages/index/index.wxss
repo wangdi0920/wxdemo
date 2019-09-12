@@ -1,24 +1,22 @@
 /**index.wxss**/
+.navigation {
+  width: 100%;
+  background: #c02c38;
+  color: #FFF;
+  padding-left: 40rpx;
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0rpx;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
 
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
 .main{
   position: fixed;
   top:0;

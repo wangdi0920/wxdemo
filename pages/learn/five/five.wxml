@@ -1,0 +1,28 @@
+<!--pages/learn/five/five.wxml-->
+ <swiper indicator-active-color="#f00" circular="{{true}}" indicator-color="#FFFFFF" indicator-dots="true" autoplay="true" interval="3000" duration="1000" class="swiper-box" display-multiple-items="1">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="100%" height="100%" />
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<view>
+<view class='tabbar'>
+    <block wx:for="{{ hot_tab_nav}}" wx:key="{{index}}">
+      <view class="tab-item {{item.active_class}}" bindtap="swichNav" data-current="{{index}}">{{item.title}}</view>
+    </block>
+</view>
+<swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
+      <swiper-item class='swiper'>
+        <view style='width:100%;height:80rpx;background:#3333'>音乐</view>
+      </swiper-item>
+      <swiper-item class='swiper1'>
+        <view style='width:100%;height:80rpx;background:#f00'>电影</view>
+      </swiper-item>
+      <swiper-item class='swiper1'>
+        <view style='width:100%;height:80rpx;background:green'>运动</view>
+      </swiper-item>
+</swiper>
+</view>

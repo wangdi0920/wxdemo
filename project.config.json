@@ -19,6 +19,8 @@
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -28,13 +30,66 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "弹性布局",
+					"pathName": "pages/learn/six/six",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地图组件",
+					"pathName": "pages/learn/four/four",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "swiper和下拉菜单",
+					"pathName": "pages/learn/five/five",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "目录结构",
+					"pathName": "pages/learn/once/once",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "支付页面",
+					"pathName": "pages/learn/seven/seven",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"scene": null
+				}
+			]
 		}
 	}
 }

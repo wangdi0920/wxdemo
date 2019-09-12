@@ -6,6 +6,6 @@
   "navigationBarTitleText": "学习目录",
   "navigationBarTextStyle": "black",
   "usingComponents": {
-    "g-more": "/components/more/index"
+    "g-cell": "/components/g-ui/g-cell/index"
   }
 }

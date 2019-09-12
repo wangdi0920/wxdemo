@@ -1,0 +1,16 @@
+<!--pages/learn/seven/seven.wxml-->
+<view bindtap='orderBuy'>点击支付1元</view>
+<g-checkbox checkList="{{checkboxArr}}" bind:getValue='getValue'></g-checkbox>
+
+<!-- <checkbox-group bindchange="checkboxChange">
+  <label class="{{item.checked?'checkbox checked':'checkbox'}}" wx:for="{{checkboxArr}}" bindtap='checkbox' data-index="{{index}}" wx:key="item.name">
+  <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+  </label>
+ </checkbox-group> -->
+
+
+ <radio-group bindchange="radioChange">
+  <label class="{{item.checked?'checkbox checked':'checkbox'}}" wx:for="{{radioboxArr}}" bindtap='radio' data-index="{{index}}" wx:key="item.name">
+  <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
+  </label>
+ </radio-group>

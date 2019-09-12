@@ -3,28 +3,10 @@
   <view class='banner'>
     <image class='img' src='../../image/banner1.jpeg'></image>
   </view>
-  <view class='list'>
-    <navigator url='/pages/learn/once/once'>
-      <view class='list_con'>
-        <view>第一节：简述小程序的目录结构</view>
-      </view>
-    </navigator>
-    <navigator url='/pages/learn/two/two'>
-      <view class='list_con'>
-        <view>第二节：简述小程序的路由</view>
-      </view>
-    </navigator>
-    <navigator url='/pages/learn/three/three'>
-      <view class='list_con'>
-        <view>第三节：简述小程序的分享功能</view>
-      </view>
-      <view class='list_con'>
-        <view>第四节：小程序的授权</view>
-      </view>
-       <view class='list_con'>
-        <view>第四节：小程序路由拦截器</view>
-      </view>
-    </navigator>
+  <view >
+    <block wx:for='{{menu}}' wx:key='{{index}}'>
+      <g-cell  label="{{item.name || '--'}}" desc="" data-pkid="{{item.name}}" bind:tap="handleTap" data-url='{{item.path}}' access>
+      </g-cell>
+  </block> 
   </view>
-   <g-more max="10" text="{{name !== '' && name !== 'null' ?name:'--'}}" />
 </view>

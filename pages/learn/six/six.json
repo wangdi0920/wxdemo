@@ -1,0 +1,9 @@
+{
+  "backgroundTextStyle": "dark",
+  "backgroundColorTop": "#fff",
+  "backgroundColorBottom": "#F1F6F7",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "跳转其他小程序",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {}
+}

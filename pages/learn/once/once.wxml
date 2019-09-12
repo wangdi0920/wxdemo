@@ -5,9 +5,11 @@
     1.一个小程序主体部分由三个文件组成，必须放在项目的根目录,app.js、app.json、app.wxss
    </view>
    <view>2.一个小程序页面由四个文件组成，分别是：js 、wxml、 json、wxss</view>
-   <view style='color:red' >注意：为了方便开发者减少配置项，描述页面的四个文件必须具有相同的路径与文件名。</view>
+   <view style='color:#666' >
+    <g-more max="20" text="{{name !== '' && name !== 'null' ?name:'--'}}" />
+   </view>
+   
   </view>
-  <!-- <navigator url='https://developers.weixin.qq.com/miniprogram/dev/framework/config.html#%E9%A1%B5%E9%9D%A2%E9%85%8D%E7%BD%AE'>参考链接：</navigator> -->
    <view class='imgBox'>
     <image class='img' mode='aspectFill' src='../../../image/gx.gif'></image>
   </view>

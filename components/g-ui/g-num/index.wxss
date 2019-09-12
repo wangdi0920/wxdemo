@@ -1,0 +1,18 @@
+/* components/g-ui/g-num/index.wxss */
+.num-controller{
+  margin-top: 20rpx;
+  display: flex;
+}
+.btn{
+  border: 1px solid #ccc;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+.goods-num{
+  margin: 0 30rpx;
+}
+.notice{
+  margin-right: 30rpx;
+}
