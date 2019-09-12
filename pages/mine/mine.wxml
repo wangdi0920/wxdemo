@@ -25,3 +25,7 @@
         我是弹框
     </view>
 </view>
+
+<button type='primary' bindtap='getOpenid'>获取用户openid</button><text>{{openid}}</text>
+
+<view>{{number}}</view>

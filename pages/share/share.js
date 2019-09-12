@@ -10,7 +10,7 @@ Page({
     urlCon:[
       { title: '跳转链接参考文档', 
       urlList: [
-        { url: 'https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html?search-key=web-view'}
+        { url: 'https://zhihui.tshuiwan.com/daolan'}
       ]},
       {
         title: '组件参考文档', 
