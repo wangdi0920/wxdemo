@@ -28,8 +28,8 @@ module.exports = {
           },
           fail: res => {
             console.error('Request Fail to fetch SessionId', res);
-            reject(res);
-            wxapp.showModal({
+            // reject(res);
+            wx.showModal({
               title: '提示',
               content: '系统维护中，请稍后再试',
               showCancel: false

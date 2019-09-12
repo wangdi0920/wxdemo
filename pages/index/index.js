@@ -119,5 +119,10 @@ Page({
       navigationHeight: h
     })
 
+  },
+  toDetail(ev){
+    console.log(ev)
+    const { url } = ev.currentTarget.dataset
+    wx.switchTab({ url })
   }
 })

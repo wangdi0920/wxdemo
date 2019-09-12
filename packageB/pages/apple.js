@@ -1,4 +1,4 @@
-// pages/learn/two/two.js
+// packageB/pages/apple.js
 Page({
 
   /**
@@ -14,25 +14,7 @@ Page({
   onLoad: function (options) {
 
   },
-  goOne(){
-    wx.navigateTo({
-      url: '/pages/logs/logs',
-    })
-  },
-  goTwo(){
-    wx.redirectTo({
-      url: '/pages/logs/logs',
-    })
-  },
-  goThree(){
-    wx.navigateBack({
-    })
-  },
-  goFour(){
-    wx.switchTab({
-      url: '/pages/index/index',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

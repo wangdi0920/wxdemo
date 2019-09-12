@@ -1,27 +1,27 @@
 // pages/mine/mine.js
 const app = getApp();
-const { numberReplace } = require('../../utils/util.js')
-let params = {
-  encryptedData: "D4yUWiasFXWLU6YMPADg799K5Y7aeeMZp7hXSi7ZjUTUJdUHfnQIB6HlccqMbHBOtVSpGVpLUBKnfJzmaM2PfSWZCH57BEYehEsHG9CV+LJaH9SHuLlshw64E/iDLoUK6jlVjIFNkf3CaxdnVHp3uVSNulF2Oc0Fz4FPmCNhf+qaZhq8+Q8PotI+plkEAs7uELUMI/wdZJMLs0W/rzCXN1uBsJLaxcz9WEkqagiiSPOjMnSW4t+leEoI2RaMvHKkeihJ/Ud0M46T5d8EWC9Pmy1e9IN82cXHcnk1Ij/kXTVfkF7ND76HtmI3uRvzcyscxdAtIHtyHbeZXubmd9SBogsU0ZKAFItkn6tFShWHdRyRnX2bxmZHvUcfYIkmxmmUBCKbjDpVVW1dZ0ufgeH0U+Yfc2xxHeIjNtd77/ins6AYSPxVR3elb2KHlwRzCdnPV09oXro5KLJYzB0L795hVKe0IXE/8M6y0aVRgW8Bn+M=",
-    ivStr: "y0yR1bhykHje9r58rbte7Q==",
-  token: "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsb2dpbiIsInNlc3Npb25LZXkiOiJ4NUhkVEtqMDZjQk1QV2lWZUM1TnR3PT0iLCJvcGVuSWQiOiJvRU1ZNjVIX0hDWUs0RlBOa1BSUmFzVHhRZzZnIiwiZXhwIjoxNTYyNjQxNjc4LCJpYXQiOjE1NjI2MzgwNzgsImp0aSI6ImNkNjE5MzMxLWZlOWYtNGM2Yi04YWUyLTI1N2RjNjJmMjE1ZSJ9.vl5cNAfq8bH4QYS2QipubNmhBrnPTcSmzrFtf59TsZ4"
-}
+const { numberReplace } = require('../../../utils/util.js')
+// let params = {
+//   encryptedData: "D4yUWiasFXWLU6YMPADg799K5Y7aeeMZp7hXSi7ZjUTUJdUHfnQIB6HlccqMbHBOtVSpGVpLUBKnfJzmaM2PfSWZCH57BEYehEsHG9CV+LJaH9SHuLlshw64E/iDLoUK6jlVjIFNkf3CaxdnVHp3uVSNulF2Oc0Fz4FPmCNhf+qaZhq8+Q8PotI+plkEAs7uELUMI/wdZJMLs0W/rzCXN1uBsJLaxcz9WEkqagiiSPOjMnSW4t+leEoI2RaMvHKkeihJ/Ud0M46T5d8EWC9Pmy1e9IN82cXHcnk1Ij/kXTVfkF7ND76HtmI3uRvzcyscxdAtIHtyHbeZXubmd9SBogsU0ZKAFItkn6tFShWHdRyRnX2bxmZHvUcfYIkmxmmUBCKbjDpVVW1dZ0ufgeH0U+Yfc2xxHeIjNtd77/ins6AYSPxVR3elb2KHlwRzCdnPV09oXro5KLJYzB0L795hVKe0IXE/8M6y0aVRgW8Bn+M=",
+//   ivStr: "y0yR1bhykHje9r58rbte7Q==",
+//   token: "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsb2dpbiIsInNlc3Npb25LZXkiOiJ4NUhkVEtqMDZjQk1QV2lWZUM1TnR3PT0iLCJvcGVuSWQiOiJvRU1ZNjVIX0hDWUs0RlBOa1BSUmFzVHhRZzZnIiwiZXhwIjoxNTYyNjQxNjc4LCJpYXQiOjE1NjI2MzgwNzgsImp0aSI6ImNkNjE5MzMxLWZlOWYtNGM2Yi04YWUyLTI1N2RjNjJmMjE1ZSJ9.vl5cNAfq8bH4QYS2QipubNmhBrnPTcSmzrFtf59TsZ4"
+// }
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-     isLogin:false,
-     userInfo:'',
-     isShow: false,
-     number:''
+    isLogin: false,
+    userInfo: '',
+    isShow: false,
+    number: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  getUserInfo (e) {
+  getUserInfo(e) {
     console.log(e, getApp().globalData)
     wx.setStorageSync('userInfo', e.detail.userInfo);
     app.globalData.userInfo = e.detail.userInfo;
@@ -29,23 +29,22 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       isLogin: true
-    }) 
+    })
   },
-  getOpenid: function () {
-    let that = this;  //获取openid不需要授权
+  getOpenid () {
     wx.login({
-      success: function (res) {    //请求自己后台获取用户openid
+      success (res) {    //请求自己后台获取用户openid
         wx.request({
-          url: 'https://30paotui.com/user/wechat', 
+          url: 'https://30paotui.com/user/wechat',
           data: {
-            appid: '你的小程序appid', 
-            secret: '你的小程序secret', 
+            appid: '你的小程序appid',
+            secret: '你的小程序secret',
             code: res.code
-          }, 
-          success: function (response) {
-            var openid = response.data.openid; console.log('请求获取openid:' + openid);      //可以把openid存到本地，方便以后调用
+          },
+          success (response) {
+            const openid = response.data.openid; console.log('请求获取openid:' + openid);      //可以把openid存到本地，方便以后调用
             wx.setStorageSync('openid', openid);
-            that.setData({
+            this.setData({
               openid: "获取到的openid：" + openid
             })
           }
@@ -53,7 +52,7 @@ Page({
       }
     })
   },
-  onLoad(){
+  onLoad() {
     console.log(numberReplace('29'))
     this.setData({
       number: numberReplace('29')
@@ -108,52 +107,18 @@ Page({
       });
     }
   },
-  open(){
+  open() {
     this.setData({
       isShow: true
     })
   },
-  close(){
+  close() {
     this.setData({
       isShow: false
     })
   },
   // 这个方法必须有，就算不做什么事情也要写上去，因为这个事件是为了防止事件冒泡
-  inbtn(e){
+  inbtn(e) {
     console.log(e)
-  },  
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  // onHide: function () {
-
-  // },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  // onUnload: function () {
-
-  // },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  // onPullDownRefresh: function () {
-
-  // },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  // onReachBottom: function () {
-
-  // },
-
-  /**
-   * 用户点击右上角分享
-   */
-  // onShareAppMessage: function () {
-
-  // }
+  }
 })

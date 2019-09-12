@@ -1,23 +1,34 @@
-// pages/outUrl/outUrl.js
+// pages/learn/three/three.js
+const report = require('../../../../utils/report.js') ;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    url:''
+    num:0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      url: wx.getStorageSync('webView')
-    })
-    
+    report.countShare('转发成功');
   },
-
+  //转发
+  onShareAppMessage(res) {
+   
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      path: '/page/learn/three/three'
+    }
+  },
+  numChange(e){
+     console.log('获取从组件内部传过来的值',e.detail)
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

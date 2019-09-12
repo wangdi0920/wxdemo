@@ -9,13 +9,9 @@
   </view>
 
   <view class="container" style="padding-top: {{navigationTop + navigationHeight+100}}px" wx:if="{{isShowIndex}}"> 
-    <navigator url='/pages/learn/catalog'>
-      <view>目录</view>
-    </navigator>
-     <navigator url='/pages/share/share'>
-      <view>参考资料</view>
-    </navigator>
-    <navigator url='/pages/mine/mine'>
+      <view bindtap="toDetail" data-url="/pages/learn/catalog">目录</view>
+      <view bindtap="toDetail" data-url="/pages/share/share">参考资料</view>
+    <navigator url='/packageA/pages/mine/mine'>
       <view>我的</view>
     </navigator>
     </view>
