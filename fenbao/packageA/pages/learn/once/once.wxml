@@ -11,7 +11,7 @@
    
   </view>
    <view class='imgBox'>
-    <image class='img' mode='aspectFill' src='../../../image/gx.gif'></image>
+    <image class='img' mode='aspectFill' src='/image/gx.gif'></image>
   </view>
   <view class='text'>
   未完待续,敬请期待......

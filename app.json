@@ -37,7 +37,7 @@
   },
   "subpackages": [
     {
-      "root": "packageA",
+      "root": "fenbao/packageA",
       "pages": [
         "pages/learn/once/once",
         "pages/learn/two/two",
@@ -51,7 +51,7 @@
         "pages/mine/mine"
       ]
     }, {
-      "root": "packageB",
+      "root": "fenbao/packageB",
       "pages": [
         
       ]
