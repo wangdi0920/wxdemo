@@ -1,18 +1,43 @@
 /* components/g-ui/g-num/index.wxss */
-.num-controller{
-  margin-top: 20rpx;
+:host {
+  display: block;
+  position: relative;
+}
+.stepper{
   display: flex;
+  align-items: center; 
 }
-.btn{
-  border: 1px solid #ccc;
-  width: 40rpx;
-  height: 40rpx;
+.stepper-add,
+.stepper-minus {
+  width: 48rpx;
+  height: 48rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  line-height: 40rpx;
+  border: 1px dashed #007CE3 !important;
+  border-radius: 2rpx !important;
+  color: #007CE3;
+  font-size: 30rpx;
+  margin:0;
+  padding: 0;
+  /* box-sizing: inherit; */
 }
-.goods-num{
-  margin: 0 30rpx;
+.disabled {
+  color: #9AA2AA;
+  background: #f9f9f9;
+  border: 1rpx dashed #888888 !important;
 }
-.notice{
-  margin-right: 30rpx;
+.stepper-iput{
+  width: 200rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  text-align: center;
+}
+
+
+
+button::after{
+  border:0;
+  padding: 0;
 }

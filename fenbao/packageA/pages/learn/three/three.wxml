@@ -5,7 +5,23 @@
     <image class='img' mode='aspectFill' src='../../../../image/gx.gif'></image>
   </view>
   <button open-type="share" type='primary' size='{{primarySize}}'>点击分享给朋友</button>
-  <g-num num='{{num}}' bindTap="numChange"></g-num>
+  <!-- <g-num num='{{num}}' bindTap="numChange"></g-num> -->
+  <g-num class="stepper stepper-ticket"
+  value="{{ valueNumber }}"
+  integer
+  min="0"
+  max="10"
+  bind:change="onChange"
+/>
+<g-num class="stepper stepper-hotel"
+  value="{{ valueNumber2 }}"
+  min="5"
+  max="20"
+  step="2"
+  disableInput
+  inputWidth="74rpx"
+  bind:change="onChange2"
+/>
   <view>
     1.将组件数据传到外部的方法为this.triggerEvent('方法名',{要传递的数据})。
     2. @自定义事件名aaa  =  " 父组件对应的函数fn "

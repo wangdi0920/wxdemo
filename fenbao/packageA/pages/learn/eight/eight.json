@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "倒计时和地区选择和变换主题",
+  "usingComponents": {
+    "count-down": "/components/count-down/count-down"
+  }
+}

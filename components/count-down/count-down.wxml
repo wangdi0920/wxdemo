@@ -1,0 +1,14 @@
+<!--components/count-down/count-down.wxml-->
+<!-- <wxs src="./utils.wxs" module="utils" /> -->
+<wxs module="comm" src="./comm.wxs"></wxs>
+<view class="count-down">
+  <text wx:if="{{result!==''}}">{{result}}</text>
+  <block wx:else>
+    <text wx:if="{{comm.numberToFixed(d)>0}}">{{d}}天</text>
+    <text>{{comm.fixedZero(h)}}</text>
+    <text style="font-weight: 500">:</text>
+    <text>{{comm.fixedZero(m)}}</text>
+    <text style="font-weight: 500">:</text>
+    <text>{{comm.fixedZero(s)}}</text>
+  </block>
+</view>

@@ -1,6 +1,6 @@
 // pages/mine/mine.js
 const app = getApp();
-const { numberReplace } = require('../../../utils/util.js')
+const { numberReplace } = require('../../../../utils/util.js')
 // let params = {
 //   encryptedData: "D4yUWiasFXWLU6YMPADg799K5Y7aeeMZp7hXSi7ZjUTUJdUHfnQIB6HlccqMbHBOtVSpGVpLUBKnfJzmaM2PfSWZCH57BEYehEsHG9CV+LJaH9SHuLlshw64E/iDLoUK6jlVjIFNkf3CaxdnVHp3uVSNulF2Oc0Fz4FPmCNhf+qaZhq8+Q8PotI+plkEAs7uELUMI/wdZJMLs0W/rzCXN1uBsJLaxcz9WEkqagiiSPOjMnSW4t+leEoI2RaMvHKkeihJ/Ud0M46T5d8EWC9Pmy1e9IN82cXHcnk1Ij/kXTVfkF7ND76HtmI3uRvzcyscxdAtIHtyHbeZXubmd9SBogsU0ZKAFItkn6tFShWHdRyRnX2bxmZHvUcfYIkmxmmUBCKbjDpVVW1dZ0ufgeH0U+Yfc2xxHeIjNtd77/ins6AYSPxVR3elb2KHlwRzCdnPV09oXro5KLJYzB0L795hVKe0IXE/8M6y0aVRgW8Bn+M=",
 //   ivStr: "y0yR1bhykHje9r58rbte7Q==",

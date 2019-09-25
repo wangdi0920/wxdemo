@@ -48,13 +48,13 @@
         "pages/learn/five/five",
         "pages/learn/six/six",
         "pages/learn/seven/seven",
-        "pages/mine/mine"
+        "pages/mine/mine",
+        "pages/learn/eight/eight"
       ]
-    }, {
+    },
+    {
       "root": "fenbao/packageB",
-      "pages": [
-        
-      ]
+      "pages": []
     }
   ],
   "networkTimeout": {

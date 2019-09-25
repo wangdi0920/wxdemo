@@ -1,0 +1,4 @@
+/* fenbao/packageA/pages/learn/eight/eight.wxss */
+.red{
+  color: #f00;
+}

@@ -1,0 +1,12 @@
+var fixedZero =  function(val) {
+  return val * 1 < 10 ? '0' + val : val;
+}
+//保留 pos位小数
+var numberToFixed = function (number, pos) {
+  if (number === null || number === '' || number < 0) return ''
+  return parseFloat(number).toFixed(pos)
+}
+module.exports = {
+  fixedZero: fixedZero,
+  numberToFixed: numberToFixed
+}

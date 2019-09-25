@@ -11,7 +11,8 @@ Page({
       { path: '/fenbao/packageA/pages/learn/four/four', name: '第四节：小程序授权和获取地理位置' },
       { path: '/fenbao/packageA/pages/learn/five/five', name: '第五节：swiper组件和下拉菜单' },
       { path: '/fenbao/packageA/pages/learn/six/six', name: '第六节：跳转其他小程序和弹性布局' }, 
-      { path: '/fenbao/packageA/pages/learn/seven/seven', name: '第7七节：微信小程序支付' }
+      { path: '/fenbao/packageA/pages/learn/seven/seven', name: '第七节：微信小程序支付' },
+      { path: '/fenbao/packageA/pages/learn/eight/eight', name: '第八节：倒计时和地区选择和变换主题' }
       ]
   },
 

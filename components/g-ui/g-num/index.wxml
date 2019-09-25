@@ -1,8 +1,18 @@
 <!--components/g-ui/g-num/index.wxml-->
-<view class="num-controller">
-  <view class="btn sub-btn" hidden="{{num<0}}" bindtap="sub">-</view>
-  <view class="goods-num" hidden="{{num<0}}">{{num}}</view>
-   <view class='notice' wx:if="{{num<0}}">不能再减少啦</view>
-  <view class="btn add-btn" bindtap="add">+</view>
+<view class="stepper">
+    <button class="stepper-minus  {{value == min ? 'disabled' : ''}}"
+            bindtap="onMinus"
+            disabled="{{value == min}}">-</button>
+    <input type="number"
+           class="stepper-iput"
+           style="{{ inputWidth ? 'width: ' + inputWidth : '' }}"
+           value="{{ value }}"
+           focus="{{ focus }}"
+           disabled="{{ disabled || disableInput }}"
+           bindinput="onInput"
+           bind:focus="onFocus"
+           bind:blur="onBlur" />
+    <button class="stepper-add {{value == max ? 'disabled' : ''}}"
+            bindtap="onPlus"
+            disabled="{{value == max}}">+</button>
 </view>
-<!-- 如果小于0 就去掉减法 -->
