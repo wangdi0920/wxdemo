@@ -1,2 +1,2 @@
 <!--fenbao/packageA/pages/learn/nine/nine.wxml-->
-<vant-button type="primary">按钮</vant-button>
+<vant-button >按钮</vant-button>
