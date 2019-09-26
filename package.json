@@ -1,0 +1,23 @@
+{
+  "name": "wxdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "vant-weapp": "^1.0.0-beta.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangdi0920/wxdemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangdi0920/wxdemo/issues"
+  },
+  "homepage": "https://github.com/wangdi0920/wxdemo#readme"
+}

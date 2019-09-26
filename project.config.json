@@ -4,6 +4,22 @@
 		"ignore": []
 	},
 	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
 		"setting": {
 			"urlCheck": false,
 			"es6": true,
@@ -21,7 +37,8 @@
 				"disablePlugins": [],
 				"outputPath": ""
 			}
-		}
+		},
+		"nodeModules": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.1",
@@ -51,7 +68,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 8,
 			"list": [
 				{
 					"id": -1,
@@ -106,6 +123,13 @@
 					"id": -1,
 					"name": "倒计时",
 					"pathName": "fenbao/packageA/pages/learn/eight/eight",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "vant-weapp",
+					"pathName": "fenbao/packageA/pages/learn/nine/nine",
 					"scene": null
 				}
 			]
