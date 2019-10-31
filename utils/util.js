@@ -10,6 +10,7 @@ const formatTime = date => {
 }
 
 const formatNumber = n => {
+  // eslint-disable-next-line no-param-reassign
   n = n.toString()
   return n[1] ? n : '0' + n
 }
@@ -32,6 +33,6 @@ const numberReplace = str => {
 };
 
 module.exports = {
-  formatTime: formatTime,
+  formatTime,
   numberReplace
 }
