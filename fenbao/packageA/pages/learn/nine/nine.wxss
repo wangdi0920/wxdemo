@@ -1,1 +1,13 @@
 /* fenbao/packageA/pages/learn/nine/nine.wxss */
+.imageList{
+  display: flex;
+  align-items: center;
+}
+.item-image{
+  width: 280rpx;
+  height: 280rpx;
+}
+.item-image .image{
+  width: 280rpx;
+  height: 280rpx;
+}

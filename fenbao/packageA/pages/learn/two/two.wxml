@@ -11,7 +11,7 @@
       <view bindtap='goThree'>3.页面返回（wx.navigateBack) </view>
     </view>
     <view class='list_con'>
-      <view bindtap='goFour'>3.打开tabBar页面（wx.navigateBack) </view>
+      <view bindtap='goFour'>3.打开tabBar页面（wx.switchTab) </view>
     </view>
   </view>
   <view class='tips'>

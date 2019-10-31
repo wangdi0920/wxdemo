@@ -1,0 +1,33 @@
+<!--fenbao/packageA/pages/learn/ten/ten.wxml-->
+<wxs src="./lib.wxs" module="lib"/>
+<!-- <view class="" bindtap="selectDate">{{showInDate || '请选择游玩日期'}}</view>
+<view class="" bindtap="selectMoreDate">请选择入住/离店日期</view> -->
+<view>{{lib.msg}}</view>
+<view>{{lib.a}}</view>
+<view>{{lib.b('你好','世界')}}</view>
+<view wx:for="{{checked}}" wx:key="*this">
+  {{lib.c(selsectDate,'ids',item).name}}
+</view>
+<!--  
+wxs使用：
+ 1.使用场景  在wxml中不能使用js方法，同时又不想在js文件中又不太好处理，此刻可以考虑使用wxs
+ 2.使用wxs不能使用map，filter等方法，wxs不支持es6方
+ -->
+
+<form bind:submit="onSubmit" bind:reset="onReset">
+
+  <input  type="text"
+           name="name"
+           maxlength="13"
+           placeholder="请输入姓名"
+           placeholder-class="placeholder"
+           value="{{ formData.name }}" />
+   <textarea  name="backup"
+              value="{{formData.backup}}"
+              placeholder="请输入备注信息"
+              ></textarea>
+   <button form-type="submit" type="primary"
+          class="btn">确认</button>
+   <button form-type="reset">取消</button>
+</form>
+

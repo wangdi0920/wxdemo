@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/learn/catalog",
-    "pages/share/share"
+    "pages/share/share",
+    "components/calendar/calendar"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -50,7 +51,11 @@
         "pages/learn/seven/seven",
         "pages/mine/mine",
         "pages/learn/eight/eight",
-        "pages/learn/nine/nine"
+        "pages/learn/nine/nine",
+        "pages/learn/ten/ten",
+        "pages/select-calendar/select-calendar",
+        "pages/learn/eleven",
+        "pages/learn/eleven/eleven"
       ]
     },
     {

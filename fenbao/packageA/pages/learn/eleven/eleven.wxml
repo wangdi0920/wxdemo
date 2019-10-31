@@ -1,0 +1,7 @@
+<!--fenbao/packageA/pages/learn/eleven/eleven.wxml-->
+ <!-- <live-pusher url="https://domain/push_stream" mode="RTC" autopush bindstatechange="statechange" style="width: 300px; height: 225px;" /> -->
+ <!-- <view>
+   获取当前日期的后一个月时间
+ </view> -->
+ <view>{{dateRange }}</view>
+

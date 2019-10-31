@@ -1,0 +1,24 @@
+<!--fenbao/packageA/pages/select-calendar/select-calendar.wxml-->
+<!-- 
+    moneyList="{{moneyList}}"    /**价钱数据 */
+    sempleDate="{{sempleDate}}"  /**单选选中的日期 */
+    moreDates="{{moreDates}}"    /**多选选中日期 */
+    bind:getDetails="getDetails" /**单选选返回的数据 */
+    bind:getMoreDates="getMoreDates" /**多选选返回的数据 */
+    isContinueDays="{{isTrue}}"    /**是否选择连续天数 */
+    todayOrTroIsShow="{{false}}"   /*今日，明日是否可选*/
+    priceenddate="{{}}"  价格结束日期
+
+-->
+<calendar wx:if="{{isTrue}}"
+          maxMonth="3"
+          sempleDate="{{sempleDate}}"
+          isContinueDays="{{isTrue}}"
+          priceenddate="{{priceenddate}}"
+          bind:getDetails="getDetails"></calendar>
+<calendar wx:else
+          moneyList="{{moneyList}}"
+          moreDates="{{moreDates}}"
+          isContinueDays="{{isTrue}}"
+          todayOrTroIsShow="{{false}}"
+          bind:getMoreDates="getMoreDates"></calendar>

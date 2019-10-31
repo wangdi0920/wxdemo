@@ -11,34 +11,16 @@
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+		"nodeModules": false,
 		"autoAudits": false,
 		"checkInvalidKey": true,
-		"checkSiteMap": true,
+		"checkSiteMap": false,
 		"uploadWithSourceMap": true,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		},
-		"setting": {
-			"urlCheck": false,
-			"es6": true,
-			"enhance": true,
-			"postcss": true,
-			"minified": true,
-			"newFeature": true,
-			"coverView": true,
-			"autoAudits": false,
-			"checkInvalidKey": true,
-			"checkSiteMap": false,
-			"uploadWithSourceMap": true,
-			"babelSetting": {
-				"ignore": [],
-				"disablePlugins": [],
-				"outputPath": ""
-			}
-		},
-		"nodeModules": true
+		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.1",
@@ -68,7 +50,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 8,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -130,6 +112,20 @@
 					"id": -1,
 					"name": "vant-weapp",
 					"pathName": "fenbao/packageA/pages/learn/nine/nine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "日期选择",
+					"pathName": "fenbao/packageA/pages/learn/ten/ten",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "学习",
+					"pathName": "fenbao/packageA/pages/learn/eleven/eleven",
 					"scene": null
 				}
 			]

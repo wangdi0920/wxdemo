@@ -1,0 +1,16 @@
+var a = "wxs文件使用";
+var b = function(b1,b2){
+   return b1 + b2
+};
+module.exports = {
+  a: a,
+  b: b,
+  c: function (array,targetKey,target){ //把目标属性写称变量比较灵活
+    for (var i = 0; i < array.length;i++){
+      if (array[i][targetKey] === target ){
+        return array[i]
+      }
+    }
+  }
+};
+module.exports.msg = "这是wxs文件中的msg变量的值";

@@ -13,7 +13,9 @@ Page({
       { path: '/fenbao/packageA/pages/learn/six/six', name: '第六节：跳转其他小程序和弹性布局' }, 
       { path: '/fenbao/packageA/pages/learn/seven/seven', name: '第七节：微信小程序支付' },
       { path: '/fenbao/packageA/pages/learn/eight/eight', name: '第八节：倒计时和地区选择和变换主题' },
-      { path: '/fenbao/packageA/pages/learn/nine/nine', name: '第九节：使用vant-weapp库' }
+      { path: '/fenbao/packageA/pages/learn/nine/nine', name: '第九节：使用vant-weapp库和moment.js' },
+      { path: '/fenbao/packageA/pages/learn/ten/ten', name: '第十节：日期选择和wxs使用以及form提交订单' },
+      { path: '/fenbao/packageA/pages/learn/eleven/eleven', name: '第十一节：学习' }
       ]
   },
 

@@ -1,0 +1,65 @@
+/* components/calendar/calendar.wxss */
+page {
+  background: #fff;
+}
+
+.layout-flex {
+  width: 100vw;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 96rpx;
+}
+
+.week {
+  color: #007ce3;
+}
+.date-day.unavailable {
+  color: #aaa;
+}
+
+.month {
+  padding: 30rpx 0rpx;
+}
+
+.date-year-month {
+  text-align: center;
+  padding-bottom: 30rpx;
+}
+
+.date-layout-flex {
+  margin-top: 30rpx;
+  min-height: 660rpx;
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100vw;
+  font-size: 30rpx;
+  line-height: 36rpx;
+}
+
+.date-day {
+  padding-top: 40rpx;
+  height: 100rpx;
+  width: calc(100vw / 7);
+}
+
+.bgitem {
+  background-color: rgb(177, 213, 243);
+}
+
+.money {
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 24rpx;
+}
+
+.date-day.active {
+  background: #007ce3;
+  color: #fff;
+}
+.date-day.nobgItem {
+  background-color: #eee;
+}

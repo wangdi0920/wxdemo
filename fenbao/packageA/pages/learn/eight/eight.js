@@ -40,8 +40,8 @@ Page({
    /** 定时更改、恢复主题 */
   setTheme() {
     const now = new Date()
-    const start = new Date(2019, 9, 1)
-    const end = new Date(2019, 9, 8)
+    const start = new Date(2019, 9, 24) //月份要加1
+    const end = new Date(2019, 10, 8) /
 
     console.log(now, 'now')
     console.log(start, 'change theme')

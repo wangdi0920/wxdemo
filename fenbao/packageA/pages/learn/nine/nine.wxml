@@ -1,2 +1,20 @@
 <!--fenbao/packageA/pages/learn/nine/nine.wxml-->
-<vant-button >按钮</vant-button>
+<view><vant-button type="primary">按钮</vant-button></view>
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="标签 1">内容 1</van-tab>
+  <van-tab title="标签 2">内容 2</van-tab>
+  <van-tab title="标签 3">内容 3</van-tab>
+  <van-tab title="标签 4">内容 4</van-tab>
+</van-tabs>
+
+<view bindtap="upLoadImg">上传图片</view>
+<view class="imageList">
+  <view class="item-image" wx:for="{{dataImage}}" wx:key="item">
+    <image class="image" src="{{item}}"></image>
+  </view>
+</view>
+
+<view>{{day}}</view>
+<!-- <view>官网链接：http://momentjs.cn/docs/#/customization/long-date-formats</view>
+<view>参考链接：https://www.jianshu.com/p/e5b7c0606a3f</view> -->
+

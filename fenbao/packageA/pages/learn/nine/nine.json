@@ -1,6 +1,8 @@
 {
   "navigationBarTitleText": "vant-weapp",
   "usingComponents": {
-    "vant-button": "/miniprogram_npm/vant-weapp/button/index"
+    "vant-button": "/miniprogram_npm/vant-weapp/button/index",
+    "vant-tabs": "/miniprogram_npm/vant-weapp/tabs/index",
+    "vant-tab": "/miniprogram_npm/vant-weapp/tab/index"
   }
 }
