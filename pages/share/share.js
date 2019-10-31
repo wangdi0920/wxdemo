@@ -34,11 +34,11 @@ Page({
 
   openUrl(e) {
     console.log(e)
-    const url = e.target.dataset.url;
+    const { url } = e.target.dataset
     wx.setStorageSync('webView', url)
     wx.navigateTo({
       url: '/packageA/pages/outUrl/outUrl'
     })
   },
-  
+
 })
