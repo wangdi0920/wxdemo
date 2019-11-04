@@ -1,10 +1,10 @@
 // components/count-down/count-down.js
-var timer = 0;
-var interval = 1000;
+let timer = 0;
+const interval = 1000;
 Component({
-  /**
-   * 组件的属性列表
-   */
+  options: {
+    addGlobalClass: true,
+  },
   properties: {
     target: {
       type: String,
@@ -20,18 +20,14 @@ Component({
       //组件创建时
       this.setData({
         lastTime: this.initTime(this.properties).lastTime,  //根据 target 初始化组件的lastTime属性
-      }, () => {
-        //开启定时器
-        this.tick();
-        //判断是否有format属性 如果设置按照自定义format处理页面上显示的时间 没有设置按照默认的格式处理
-        if (typeof this.properties.format === 'object') {
-          this.defaultFormat(this.data.lastTime)
-        }
       })
+      //开启定时器
+      this.tick();
     },
 
     detached() {
       //组件销毁时清除定时器 防止爆栈
+      // eslint-disable-next-line no-undef
       clearTimeout(timer);
     },
   },
@@ -45,7 +41,7 @@ Component({
     m: 0, //分
     s: 0, //秒
     result: '',  //自定义格式返回页面显示结果
-    lastTime: ''  //倒计时的时间错
+    lastTime: ''  //倒计时的时间戳
   },
 
   /**
@@ -53,7 +49,7 @@ Component({
    */
   methods: {
     //默认处理时间格式
-    defaultFormat:  function(time){
+    defaultFormat(time) {
       const day = 24 * 60 * 60 * 1000
       const hours = 60 * 60 * 1000;
       const minutes = 60 * 1000;
@@ -71,61 +67,45 @@ Component({
     },
 
     //定时事件
-    tick: function () {
+    tick() {
       let {
         lastTime
       } = this.data;
-
+      // eslint-disable-next-line no-undef
       timer = setTimeout(() => {
         if (lastTime < interval) {
+          // eslint-disable-next-line no-undef
           clearTimeout(timer);
           this.setData({
             lastTime: 0,
             result: ''
-          },
-            () => {
-              this.defaultFormat(lastTime)
-              if (this.onEnd) {
-                this.onEnd();
-              }
-            }
-          );
+          });
+          this.defaultFormat(lastTime)
+          this.onEnd();
         } else {
           lastTime -= interval;
           this.setData({
             lastTime,
             result: this.properties.format ? this.properties.format(lastTime) : ''
-          },
-            () => {
-              this.defaultFormat(lastTime)
-              this.tick();
-            }
-          );
+          });
+          this.defaultFormat(lastTime)
+          this.tick();
         }
       }, interval);
     },
 
     //初始化时间
-    initTime: function (properties) {
+    initTime(properties) {
       let lastTime = 0;
       let targetTime = 0;
-      try {
-        if (Object.prototype.toString.call(properties.target) === '[object Date]') {
-          targetTime = Number(properties.target).getTime();
-        } else {
-          targetTime = new Date(Number(properties.target)).getTime();
-        }
-      } catch (e) {
-        throw new Error('invalid target properties', e);
-      }
-
+      targetTime = new Date(properties.target).getTime();
       lastTime = targetTime - new Date().getTime();
       return {
         lastTime: lastTime < 0 ? 0 : lastTime,
       };
     },
     //时间结束回调事件
-    onEnd: function () {
+    onEnd() {
       this.triggerEvent('onEnd');
     }
   }

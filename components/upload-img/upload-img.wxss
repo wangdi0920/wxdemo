@@ -1,0 +1,61 @@
+/* 撰写评论：图片 */
+.new-comment-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30rpx 0 30rpx 30rpx;
+}
+.new-comment-gallery-box {
+  /* flex: 0 1 150rpx; */
+  min-width: 140rpx;
+}
+.new-comment-gallery-img {
+  position: relative;
+  display: block;
+  width: 120rpx;
+  height: 120rpx;
+  background: #eef0f2;
+  overflow: initial;
+}
+/* 撰写评论：图片：删除按钮 */
+.btn-del {
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+  display: flex;
+  width: 40rpx;
+  height: 40rpx;
+  padding: 4rpx;
+}
+.btn-del-icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+/* 撰写评论：图片：上传按钮 */
+.btn-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0;
+  border-radius: 2rpx;
+  background: #eef0f2;
+}
+.btn-add-icon {
+  width: 60rpx;
+  height: 60rpx;
+}
+view {
+  box-sizing: border-box;
+}
+/* 按钮：无边框 */
+button.no-border::after {
+  border: initial;
+}
+button.text{
+  background: initial;
+  border-radius: initial;
+}
+button.button-hover {
+  opacity:0.7;
+}

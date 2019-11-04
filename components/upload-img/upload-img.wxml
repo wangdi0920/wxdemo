@@ -1,0 +1,17 @@
+<!-- 撰写评论：图片 -->
+  <view class="new-comment-gallery">
+    <!-- 已上传图片 -->
+    <view wx:for="{{uploadImg}}" wx:key="*this" class="new-comment-gallery-box">
+      <image class="new-comment-gallery-img" src="{{item}}">
+        <button class="text no-border btn-del" data-idx="{{index}}" bindtap="delUploadImg">
+          <image class="btn-del-icon" src="/image/del.svg" />
+        </button>
+      </image>
+    </view>
+    <!-- 上传按钮 -->
+    <view hidden="{{uploadImg.length >= maxLen}}" class="new-comment-gallery-box">
+      <button class="btn-add no-border" bindtap="addUploadImg">
+        <image class="btn-add-icon" src="/image/add.svg" />
+      </button>
+    </view>
+  </view>

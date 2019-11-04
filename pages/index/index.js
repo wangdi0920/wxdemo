@@ -8,8 +8,8 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     isShowIndex: true,
-    navigationTop:20,
-    navigationHeight:44,
+    navigationTop: 20,
+    navigationHeight: 44,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
   //事件处理函数
@@ -48,7 +48,7 @@ Page({
       })
     }
   },
-  
+
   goIndex() {
     if (this.data.userInfo) {
       this.setData({
@@ -58,14 +58,14 @@ Page({
       wx.showModal({
         title: '暂未授权',
         content: '需要您的授权才能使用哦',
-        success:(res)=> {
+        success: (res) => {
           if (res.confirm) {
             console.log('用户点击确定')
             wx.openSetting({
-              success:()=> {
+              success: () => {
                 this.setData({
                   hasUserInfo: true,
-                  isShowIndex:true,
+                  isShowIndex: true,
                 })
               }
             })
@@ -77,7 +77,7 @@ Page({
 
     }
   },
-  getLocation(){
+  getLocation() {
     wx.getLocation({
       type: 'wgs84',
       success(res) {
@@ -120,7 +120,7 @@ Page({
     })
 
   },
-  toDetail(ev){
+  toDetail(ev) {
     console.log(ev)
     const { url } = ev.currentTarget.dataset
     wx.switchTab({ url })

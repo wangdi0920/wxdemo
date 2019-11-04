@@ -1,7 +1,14 @@
 <!--fenbao/packageA/pages/learn/eleven/eleven.wxml-->
  <!-- <live-pusher url="https://domain/push_stream" mode="RTC" autopush bindstatechange="statechange" style="width: 300px; height: 225px;" /> -->
- <!-- <view>
+ <!-- 时间使用格式注意new Date() 获取的是地区时间，toISOString() 是UTC 标准，所以说如果想要获取当前日期的某天或者某月之后有两种写法，1.使用如果想要转换为 UTC时间需要做一个转换 例如 new Date(Date.UTC('2019','10','23')).toISOString()   另外就是  new Date('2019','10','23',0,-new Date().getTimezoneOffset()).toISOString()  都得到 "2019-11-23T00:00:00.000Z"   
+在使用new Date()的时候,一定注意考虑过渡时间点 -->
+ <view>
    获取当前日期的后一个月时间
- </view> -->
+ </view>
  <view>{{dateRange }}</view>
+
+
+  <view class="upload-img">
+      <upload-img  maxLen="5" bind:load-img="addPic"/>
+    </view>
 

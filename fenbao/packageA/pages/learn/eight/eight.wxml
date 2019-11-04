@@ -2,12 +2,12 @@
 <view class="{{theme === '国庆主题' ? 'red': ''}} ">
 <view>倒计时</view>
 <!-- <count-down bind:onEnd="getPageList"  target="{{creatTargetTime}}" /> -->
-<count-down bind:onEnd="getPageList1" format="{{formatTime}}" target="{{creatTargetTime2}}" />
+<count-down  format="{{formatTime}}" target="{{creatTargetTime2}}" />
 
-<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+<!-- <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
     <view class="picker">
       地区选择选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
     </view>
-</picker>
+</picker> -->
 </view>
 

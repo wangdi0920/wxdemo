@@ -4,7 +4,7 @@ const formatChinaDate = mss => {
   let hours = parseInt((mss % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   let minutes = parseInt((mss % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = parseInt((mss % (1000 * 60)) / 1000);
-  return days + ' 天 ' + hours + ' 小时 ' + minutes + ' 分钟 ' + seconds + ' 秒 ';
+  return days + ' 天 ' + hours + ' 时 ' + minutes + ' 分 ' + seconds + ' 秒 ';
 };
 /** 计时器集合，用于销毁 */
 let timers = []
@@ -13,8 +13,9 @@ Page({
     theme:'', 
     region: ['广东省', '广州市', '海珠区'],
     formatTime: formatChinaDate,
-    creatTargetTime: 1569913200000, //时间戳
-    creatTargetTime2: 1569913200000
+    creatTargetTime: 1580400000000, //时间戳
+    creatTargetTime2: '2019-11-1 11:40:00' 
+    // creatTargetTime2: new Date('2019-11-2 10:09:00').getTime() //1572660480000
     
   },
   /*地区选择*/
@@ -41,7 +42,7 @@ Page({
   setTheme() {
     const now = new Date()
     const start = new Date(2019, 9, 24) //月份要加1
-    const end = new Date(2019, 10, 8) /
+    const end = new Date(2019, 10, 8) 
 
     console.log(now, 'now')
     console.log(start, 'change theme')

@@ -1,1 +1,7 @@
 /* components/count-down/count-down.wxss */
+:host{
+    display: flex;
+}
+.count-down{
+ display: flex;
+}

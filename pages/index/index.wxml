@@ -1,21 +1,25 @@
 <!--index.wxml-->
 <view>
-   <view class="navigation" style="padding-top: {{navigationTop}}px;height: {{navigationHeight}}px;">自定义导航栏</view>
-  <view class="container" style="padding-top: {{navigationTop + navigationHeight+100}}px" wx:if="{{!isShowIndex}}" >
-    
+  <view class="navigation"
+        style="padding-top: {{navigationTop}}px;height: {{navigationHeight}}px;">自定义导航栏</view>
+  <view class="container"
+        style="padding-top: {{navigationTop + navigationHeight+100}}px"
+        wx:if="{{!isShowIndex}}">
+
     <view class="usermotto">
       <text class="user-motto">{{motto}}</text>
     </view>
   </view>
 
-  <view class="container" style="padding-top: {{navigationTop + navigationHeight+100}}px" wx:if="{{isShowIndex}}"> 
-      <view bindtap="toDetail" data-url="/pages/learn/catalog">目录</view>
-      <view bindtap="toDetail" data-url="/pages/share/share">参考资料</view>
+  <view class="container"
+        style="padding-top: {{navigationTop + navigationHeight+100}}px"
+        wx:if="{{isShowIndex}}">
+    <view bindtap="toDetail"
+          data-url="/pages/learn/catalog">目录</view>
+    <view bindtap="toDetail"
+          data-url="/pages/share/share">参考资料</view>
     <navigator url='/packageA/pages/mine/mine'>
       <view>我的</view>
     </navigator>
-    </view>
+  </view>
 </view>
-
-
-
